@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#3BE91E63"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, User!"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- First Question -->
+        <TextView
+            android:id="@+id/question_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the color of your skin undertone? Observe the veins on your wrist and choose the option that best matches the color of your veins:"
+            android:textColor="#673AB7"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/answers_group_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veins are light green"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veins are blue with a purple tint"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veins are green with a purple tint"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veins are blue or purple"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <!-- Second Question -->
+        <TextView
+            android:id="@+id/question_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How does your skin react to sunburn?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#673AB7"
+            android:layout_marginBottom="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/answers_group_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin easily gets sunburned but recovers quickly and tans after a short time."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin easily gets sunburned but takes a long time to tan and becomes darker."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin turns red when exposed to the sun but doesn't burn easily."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin turns red when exposed to sunlight and burns easily."
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <!-- RadioGroup to hold the answer options -->
+        <TextView
+            android:id="@+id/question_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="How do you look when wearing neutral colors like beige or gray?"
+            android:textColor="#673AB7"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/answers_group_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Your face looks bright and full of life when wearing beige clothing."/>
+
+            <RadioButton
+                android:id="@+id/answer_3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="There is not much difference, beige or gray clothing looks quite plain."/>
+
+            <RadioButton
+                android:id="@+id/answer_3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Gray clothing enhances your complexion and stands out more than beige."/>
+
+            <RadioButton
+                android:id="@+id/answer_3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Gray clothing makes your facial features look more defined and prominent."/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What color accessories and jewelry do you prefer?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#673AB7"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- RadioGroup to hold the answer options -->
+        <RadioGroup
+            android:id="@+id/answers_group_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <!-- RadioButton options -->
+            <RadioButton
+                android:id="@+id/answer_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shiny gold jewelry."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dull gold, light gold or brass jewelry."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jewelry in silver or light platinum."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jewelry in shiny silver or platinum."
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which lipstick color do people usually compliment you on?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#673AB7"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- RadioGroup to hold the answer options -->
+        <RadioGroup
+            android:id="@+id/answers_group_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <!-- RadioButton options -->
+            <RadioButton
+                android:id="@+id/answer_5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light peachy pink, natural."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bright coral or red with orange tint."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink red."
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/answer_5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lotus pink."
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Next"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
