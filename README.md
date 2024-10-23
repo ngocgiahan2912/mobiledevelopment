@@ -6,7 +6,7 @@
 2. Run the Project:
    - Click the "Run" button to start the app.
 
-3. **Enter Your Name:
+3. Enter Your Name:
    - When the app opens, type in your name to start the quiz.
 
 4. Take the Quiz:
