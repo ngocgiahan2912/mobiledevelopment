@@ -19,21 +19,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Kết nối các view từ layout
+        // Connect with layout
         nameEditText = findViewById(R.id.Name);
         startButton = findViewById(R.id.startButton);
 
-        // Thiết lập sự kiện click cho nút Start Quiz
+        // Thiết lập Click for Start Quiz button
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lấy tên người dùng từ EditText
+                // Get the user name
                 String userName = nameEditText.getText().toString().trim();
 
                 if (userName.isEmpty()){
                     Toast.makeText(MainActivity.this,"Pleas enter your name", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Chuyển sang QuizActivity và truyền tên người dùng
+                    // move to QuizActivity and pass the username into that layout
                     Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                     intent.putExtra("USER_NAME", userName);
                     startActivity(intent);

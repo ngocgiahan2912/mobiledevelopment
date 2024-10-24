@@ -8,8 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#3BF0E8EB"
         android:orientation="vertical"
-        android:background="#3BE91E63"
         android:padding="16dp">
 
         <TextView
@@ -25,12 +25,13 @@
             android:id="@+id/question_text_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is the color of your skin undertone? Observe the veins on your wrist and choose the option that best matches the color of your veins:"
-            android:textColor="#673AB7"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:text="What is the color of your skin undertone? Observe the veins on your wrist and choose the option that best matches the color of your veins:"
+            android:textColor="#7853BA"
+            android:textColorLink="#801414"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/answers_group_1"
@@ -73,11 +74,11 @@
             android:id="@+id/question_text_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:text="How does your skin react to sunburn?"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:textColor="#673AB7"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/answers_group_2"
@@ -125,6 +126,7 @@
             android:textColor="#673AB7"
             android:textSize="22sp"
             android:textStyle="bold" />
+
         <RadioGroup
             android:id="@+id/answers_group_3"
             android:layout_width="match_parent"
@@ -136,40 +138,40 @@
                 android:id="@+id/answer_3_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Your face looks bright and full of life when wearing beige clothing."/>
+                android:text="Your face looks bright and full of life when wearing beige clothing."
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/answer_3_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="There is not much difference, beige or gray clothing looks quite plain."/>
+                android:text="There is not much difference, beige or gray clothing looks quite plain."
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/answer_3_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Gray clothing enhances your complexion and stands out more than beige."/>
+                android:text="Gray clothing enhances your complexion and stands out more than beige."
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/answer_3_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Gray clothing makes your facial features look more defined and prominent."/>
+                android:text="Gray clothing makes your facial features look more defined and prominent."
+                android:textSize="18sp" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/question_text_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:text="What color accessories and jewelry do you prefer?"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:textColor="#673AB7"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- RadioGroup to hold the answer options -->
         <RadioGroup
@@ -214,11 +216,11 @@
             android:id="@+id/question_text_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:text="Which lipstick color do people usually compliment you on?"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:textColor="#673AB7"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- RadioGroup to hold the answer options -->
         <RadioGroup

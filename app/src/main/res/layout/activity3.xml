@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:text="Your color season is:"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/season_image"
+        android:layout_width="524dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="16dp" />
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/detail_text"
+        android:layout_width="303dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Back to Home" />
+
+</LinearLayout>
+
