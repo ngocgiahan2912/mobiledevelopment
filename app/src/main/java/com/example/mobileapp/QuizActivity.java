@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class QuizActivity extends AppCompatActivity {
@@ -35,6 +37,16 @@ public class QuizActivity extends AppCompatActivity {
         greetingTextView.setText("Welcome " + userName + " to the Quiz!");
 
         resultButton.setOnClickListener(v -> {
+            // Check if each question has been answered
+            if (radioGroup1.getCheckedRadioButtonId() == -1 ||
+                    radioGroup2.getCheckedRadioButtonId() == -1 ||
+                    radioGroup3.getCheckedRadioButtonId() == -1 ||
+                    radioGroup4.getCheckedRadioButtonId() == -1 ||
+                    radioGroup5.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(QuizActivity.this, "Please answer all questions before proceeding.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             int scoreA = 0, scoreB = 0, scoreC = 0, scoreD = 0;
 
             // Calculate points for each questions
